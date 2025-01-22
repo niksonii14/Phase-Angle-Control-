@@ -27,23 +27,23 @@ void loop() {
   }
 
   switch (incomingByte) {
-    case 49: // Press '1' for 50V output
+    case 49: // Press '1' for 20V output
       trigerTime = mapVoltageToDelay(20);
       Serial.println("20V selected, trigerTime: " + String(trigerTime));
       break;
-    case 50: // Press '2' for 100V output
+    case 50: // Press '2' for 40V output
       trigerTime = mapVoltageToDelay(40);
       Serial.println("40V selected, trigerTime: " + String(trigerTime));
       break;
-    case 51: // Press '3' for 100V output
+    case 51: // Press '3' for 60V output
       trigerTime = mapVoltageToDelay(60);
       Serial.println("60V selected, trigerTime: " + String(trigerTime));
       break;
-    case 52: // Press '4' for 100V output
+    case 52: // Press '4' for 80V output
       trigerTime = mapVoltageToDelay(80);
       Serial.println("80V selected, trigerTime: " + String(trigerTime));
       break;
-    case 53: // Press '5' for 100V output
+    case 53: // Press '5' for 90V output
       trigerTime = mapVoltageToDelay(90);
       Serial.println("90V selected, trigerTime: " + String(trigerTime));
       break;
